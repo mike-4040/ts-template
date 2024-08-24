@@ -1,8 +1,14 @@
-import { exit } from 'node:process';
+import { exit, env } from 'node:process';
 import { scheduler } from 'node:timers/promises';
 
-await scheduler.wait(1000); // Wait one second before continuing 
+console.time('app');
 
-console.log('Hello World !');
+// top-level await is available
+await scheduler.wait(1_000);
+
+console.timeEnd('app');
+
+// Env vars from .env file are loaded by node
+console.log({ MY_VAR: env.MY_VAR });
 
 exit(0);
