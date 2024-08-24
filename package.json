@@ -1,0 +1,30 @@
+{
+  "name": "ts-template",
+  "version": "0.0.1",
+  "description": "Simple typescript template",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w --preserveWatchOutput & node --watch ./lib/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mike-4040/ts-template.git"
+  },
+  "keywords": [
+    "typescript",
+    "template"
+  ],
+  "author": "Mike Kravtsov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mike-4040/ts-template/issues"
+  },
+  "homepage": "https://github.com/mike-4040/ts-template#readme",
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "typescript": "^5.5.4"
+  }
+}
